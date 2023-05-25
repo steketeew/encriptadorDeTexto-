@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Alura Challenge 01 G5 -Encriptador-</title>
+</head>
+<body>
+    <main class="contenedor1">
+
+        <section class="head">
+            <img src="imagenes/Logo.png" >
+            <h1></h1>
+            
+        </section>
+        <section class="contenedor2">
+            <div class="caja-entrada">
+                <div class="texto">
+                    <textarea id="entrada" rows="10" placeholder="Ingrese su texto aqui" autofocus></textarea>
+                </div>
+                    <div><p class="condicion">texto en minusculas y sin acentos</p></div>
+                <div class="caja-botones">
+                    <button id="btn-encrypt"y>Encriptar</button>
+                    <button id="btn-decrypt">Desencriptar</button>
+                </div>
+            </div>
+            <div class="caja-resultado">
+                <div class="img-resultado"><img src="" id="muestra-imagen" width="300px"></div>
+                    <h3 id="result"></h3>
+                    <img src="imagenes/Muñeco.png" id="ocultar-imagen">
+                    <p class="msg" id="ocultar-msg">Ningun mensaje ingresado</p>
+                    <p class="instruccion" id="ocultar-ins">encriptar o desencriptar</p>
+                <div class="boton-copia">
+                    <button id="btn-copy" onclick="sweet">Copiar</button>
+                </div>
+            </div>
+        </section>
+        <section class="creditos">
+            <div class="footer-img">
+                <p>Walter Steketee</p>
+                <div>
+                    <a href="https://github.com/steketeew/EncriptadorDeTexto"><img src="imagenes/icons8-github-squared.svg"></a>
+                    <a href="https://www.linkedin.com/in/walter-steketee-a838198a/"><img src="imagenes/icons8-linkedin.svg"></a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="encript.js"></script>
+</body>
+</html>
